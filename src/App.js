@@ -35,12 +35,12 @@ function App() {
           <li className="row">
             <div className="col left">
               <div className="thumbnail">
-                <a href="#">
+                <a href="1">
                   <img src="https://via.placeholder.com/200x150" alt="" />
                 </a>
               </div>
               <div className="detail">
-                <div className="name"><a href="#">PRODUCT ITEM NUMBER 1</a></div>
+                <div className="name"><a href="1">PRODUCT ITEM NUMBER 1</a></div>
                 <div className="description">
                   Description for product item number 1
                 </div>
@@ -76,12 +76,12 @@ function App() {
           <li className="row">
             <div className="col left">
               <div className="thumbnail">
-                <a href="#">
+                <a href="1">
                   <img src="https://via.placeholder.com/200x150" alt="" />
                 </a>
               </div>
               <div className="detail">
-                <div className="name"><a href="#">PRODUCT ITEM NUMBER 2</a></div>
+                <div className="name"><a href="1">PRODUCT ITEM NUMBER 2</a></div>
                 <div className="description">
                   Description for product item number 2
                 </div>
