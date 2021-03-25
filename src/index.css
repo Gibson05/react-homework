@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.confirm-model {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  margin: auto;
+}
+.confirm-model-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30vw;
+  height: 40vh;
+  border: 2px solid gray;
+  border-radius: 20px;
+}
+.model-btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.model-btn-group button {
+  text-align: center;
+  width: 30%; 
+  height: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 7px;
+}
+.model-btn-group button::after {
+  content: "";
+}
