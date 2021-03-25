@@ -101,6 +101,34 @@ button:focus {
   outline: none;
 }
 
+.button-back {
+  background-color: #16cc9b;
+  border: 2px solid #16cc9b;
+  color: #ffffff;
+  transition: all 0.25s linear;
+  cursor: pointer;
+}
+
+.button-back::before {
+  position: relative;
+  right: 0;
+  content: "\276e    ";
+  transition: all 0.15s linear;
+}
+
+.button-back:hover {
+  background-color: #f58551;
+  border-color: #f58551;
+}
+
+.button-back:hover::before {
+  right: 5px;
+}
+
+.button-back:focus {
+  outline: none;
+}
+
 ul {
   padding: 0;
   margin: 0;
