@@ -49,6 +49,14 @@ function App() {
     }
   }
 
+  function formatCurrency(amount) {
+      //truncate the amount to 0 decimals
+      //for every digit that is followed by 3 digits and a word boundary
+      //add a comma
+			amount = amount.toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g, "$1,");
+			return amount;
+	  }
+
   let totalQuantity = products.reduce(
     (total, product) => (total += product.quantity),
     0
@@ -66,12 +74,12 @@ function App() {
   };
 
   const taxCal = function () {
-    let a = ((sum / 100) * 10).toFixed(2);
+    let a = ((sum / 100) * 10);
     return a;
   };
 
   const afterTaxPrice =
-    parseInt(totalPrice() * (100 - numberdiscount) * 0.01) + parseInt(taxCal());
+  formatCurrency(parseInt(totalPrice() * (100 - numberdiscount) * 0.01) + parseInt(taxCal()));
 
   return (
     <main>
@@ -81,6 +89,7 @@ function App() {
         products={products}
         changeQuantity={changeQuantity}
         removeItem={removeItem}
+        formatCurrency={formatCurrency}
       />
 
       <Footer
@@ -94,6 +103,7 @@ function App() {
         taxCal={taxCal}
         numberdiscount={numberdiscount}
         afterTaxPrice={afterTaxPrice}
+        formatCurrency={formatCurrency}
       />
 
       {/* <Model message={"Ban co muon xoa khong"}/> */}

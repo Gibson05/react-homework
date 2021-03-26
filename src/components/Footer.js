@@ -1,5 +1,5 @@
 import {PRODUCTS} from "../mock-data"
-export default function Footer ( {checkpromo, products, isdiscount, setProducts, setCheckPromo, usePromoCode, totalPrice, taxCal, numberdiscount, afterTaxPrice} ) {
+export default function Footer ( {checkpromo, products, isdiscount, setProducts, setCheckPromo, usePromoCode, totalPrice, taxCal, numberdiscount, afterTaxPrice, formatCurrency} ) {
     return (
         <div>
         {products.length === 0 ? (
@@ -35,10 +35,10 @@ export default function Footer ( {checkpromo, products, isdiscount, setProducts,
             <div className="summary">
               <ul>
                 <li>
-                  Subtotal <span>${totalPrice()}</span>
+                  Subtotal <span>${formatCurrency(totalPrice())}</span>
                 </li>
                 <li>
-                  Tax <span>${taxCal()}</span>
+                  Tax <span>${formatCurrency(taxCal())}</span>
                 </li>
                 {isdiscount && (
                   <li>

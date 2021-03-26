@@ -1,4 +1,4 @@
-export default function Body ({ products, changeQuantity, removeItem }) {
+export default function Body ({ products, changeQuantity, removeItem, formatCurrency }) {
   
   const listProducts = products.map((product) => (
     <li className="row" key={product.id}>
@@ -13,7 +13,7 @@ export default function Body ({ products, changeQuantity, removeItem }) {
             <a href="1">{product.name}</a>
           </div>
           <div className="description">{product.description}</div>
-          <div className="price">{"$" + product.price}</div>
+          <div className="price">${formatCurrency(product.price)}</div>
         </div>
       </div>
 

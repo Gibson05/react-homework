@@ -4,7 +4,7 @@ export const PRODUCTS = [
       name: "Controller",
       description: "Gamepad for console",
       image: "https://images-na.ssl-images-amazon.com/images/I/61nsEtw26mL.jpg",
-      price: 50,
+      price: 100000,
       quantity: 2,
     },
     {
@@ -13,7 +13,7 @@ export const PRODUCTS = [
       description: "Gaming machine",
       image:
         "https://images-na.ssl-images-amazon.com/images/I/61p7mgi0GAL._AC_SL1200_.jpg",
-      price: 700,
+      price: 300000,
       quantity: 1,
     },
     {
@@ -22,7 +22,7 @@ export const PRODUCTS = [
       description: "Headphone for console",
       image:
         "https://images-na.ssl-images-amazon.com/images/I/51fcMvbXXKL._AC_SL1000_.jpg",
-      price: 100,
+      price: 500000,
       quantity: 1,
     },
     {
@@ -31,7 +31,7 @@ export const PRODUCTS = [
       description: "Webcam for console",
       image:
         "https://www.windowscentral.com/sites/wpcentral.com/files/field/image/2019/04/logitech-c925-e.jpg?itok=u5mhZgzj",
-      price: 80,
+      price: 200000,
       quantity: 1,
     },
   ];
